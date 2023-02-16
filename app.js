@@ -88,7 +88,6 @@ const baseUrl = 'https://rock-paper-scissors-daf8e-default-rtdb.europe-west1.fir
 async function getAllScores() {
     const response = await fetch(baseUrl);
     const scoreData = await response.json();
-    console.log(scoreData);
     return scoreData;
 
 }
@@ -112,7 +111,6 @@ function displayAllScores(scores) {
 
 function getScoreData(playerName, pScore) {
     const scoreData = {name: playerName, score: pScore};
-    console.log(scoreData);
     return scoreData;
 }
 
