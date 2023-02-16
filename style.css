@@ -1,0 +1,7 @@
+body{
+    text-align: center;
+}
+
+.play-scene, #reset-container{
+    display: none;
+}

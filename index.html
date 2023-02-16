@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2 - MP1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sten, sax, påse!</h1>
+    <form id="name-container" action="">
+        <label for="name">Namn: </label>
+        <input type="text" name="name" id="name-input">
+        <button id="name-button">OK</button>
+    </form>
+    <section class="play-scene">
+        <p>Max 3 förlust</p>
+        <h2 id="result-feedback">CPU väntar på svar...</h2>
+        <div class="btn-container">
+            <button id="rock">Sten</button>
+            <button id="scissors">Sax</button>
+            <button id="paper">Påse</button>
+        </div>
+        <h2 id="player-chooses">Du: </h2>
+        <h2 id="cpu-chooses">CPU: </h2>
+        <h2 id="result-log">0(Du) - 0(CPU)</h2>
+        <div id="reset-container">
+            <h3 id="reset-label"></h3>
+            <button id="reset-button">Restart</button>
+            <button id="submit-button">Submit score</button>
+        </div>
+    </section>
+    <section id="scores"></section>
+</body>
+<script src="app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+</html>
